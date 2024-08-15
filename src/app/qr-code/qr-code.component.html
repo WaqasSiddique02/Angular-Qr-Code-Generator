@@ -1,0 +1,6 @@
+<div class="container">
+<input type="text" placeholder="Enter Your String" [(ngModel)] ="qr_input">
+<div *ngIf="qr_input">
+<qrcode [qrdata]="qr_input" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+</div>
+</div>
